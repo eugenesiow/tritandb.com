@@ -9,18 +9,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+    <title>TritanDB</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Saira:400,700" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -66,13 +65,19 @@ L 43.55 150 141.05 206.55 141.05 339 223.25 385.95"/>
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#features">Features</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#download">Download</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#paper">Paper</a>
+                    </li>
+                    <li>
+                        <a href="//eugenesiow.gitbooks.io/tritandb/">Docs</a>
+                    </li>
+                    <li>
+                        <a class="menu-icon" href="//github.com/eugenesiow/tritandb-kt"><i class="fa fa-github" aria-hidden="true"></i></a>
                     </li>
                 </ul>
             </div>
@@ -118,8 +123,8 @@ L 223.25 385.95"/>
 </svg>
 </h1>
                         <p class="intro-text">Why compromise between performance and interoperability?
-                            <br>Get the <strong>IoT time-series database</strong> with a rich <strong>graph model</strong>.</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
+                            <br>Get the <strong>IoT time-series database</strong> with a <strong>rich graph model</strong>.</p>
+                        <a href="#features" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
@@ -128,16 +133,52 @@ L 223.25 385.95"/>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
+    <!-- Features Section -->
+    <section class="features container content-section text-center" id="features">
+      <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
+          <div class="col-lg-12 my-auto">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="fa fa-connectdevelop" aria-hidden="true"></i>
+                    <h3>Graph Queries</h3>
+                    <p class="text-muted">Uses the <a href="https://www.w3.org/TR/sparql11-overview/">SPARQL</a> graph query language which is syntactically similar to SQL and already widely used in the Semantic Web.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                    <h3>Interoperability</h3>
+                    <p class="text-muted">Integrate all your metadata and data into the same flexible, rich graph model. Use an ontology or schema to design data to comply with standards.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="fa fa-fighter-jet" aria-hidden="true"></i>
+                    <h3>Performant</h3>
+                    <p class="text-muted">Best-of-class compression specifically optimised for time-series data. Fast queries and aggregation utilising TrTables and fast ingestion with the disruptor pattern.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="fa fa-code-fork" aria-hidden="true"></i>
+                    <h3>Open Source and Cross Platform</h3>
+                    <p class="text-muted">TritanDB is licensed under the <a href"https://choosealicense.com/licenses/apache-2.0/">Apache License 2.0</a>, so you can use it commercially! It is also built with Kotlin and runs on the <a href="https://en.wikipedia.org/wiki/Java_virtual_machine">JVM</a> across many platforms.</p>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">Learn <a href="//eugenesiow.gitbooks.io/tritandb/">more</a>, see the  <a href="//github.com/eugenesiow/tritandb-kt">source code</a> or dive in and  <a class="page-scroll" href="#download">get started</a>!</p>
+        </div>
+      </div>
     </section>
 
     <!-- Download Section -->
@@ -145,33 +186,22 @@ L 223.25 385.95"/>
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                    <h2>Getting Started</h2>
+                    <p>You can download TritanDB for free on Github or if you're adventurous you can try building it from <a href="//github.com/eugenesiow/tritandb-kt">source</a>.</p>
+                    <a href="//github.com/eugenesiow/tritandb-kt/releases" class="btn btn-secondary btn-lg">Download TritanDB</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
+    <section id="paper" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+                <h2>Paper</h2>
+                <p>It’s no secret that the so-called “Internet of Things” isn’t about the Things, but the data. And it is a lot of data. How to store and maintain the time-series data and interoperability metadata is an emerging challenge for engineering teams.</p>
+                <p>We are working on a paper that introduces the novel design of TritanDB.</a>
                 </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
             </div>
         </div>
     </section>
@@ -179,21 +209,23 @@ L 223.25 385.95"/>
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Your Website 2016</p>
+            <p>Copyright &copy; 2017. <a href="http://eugenesiow.com">eugenesiow</a>. All rights reserved.</p>
         </div>
     </footer>
 
     <!-- jQuery -->
-    <script src="vendor/jquery/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://use.fontawesome.com/97c4657aa5.js"></script>
 
 </body>
 
