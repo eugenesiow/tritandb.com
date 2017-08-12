@@ -330,3 +330,11 @@ section.features .feature-item i {
 section.features .feature-item h3 {
   margin-bottom: 15px;
 }
+.built-in {
+  margin-top: 15px;
+  text-transform: none;
+  color: #0f5576;
+}
+.built-in-heart {
+  color: #F27C00;
+}
